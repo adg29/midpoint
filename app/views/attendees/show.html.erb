@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lat:</b>
+  <%= @attendee.lat %>
+</p>
+
+<p>
+  <b>Long:</b>
+  <%= @attendee.long %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @attendee.comment %>
+</p>
+
+<p>
+  <b>Invitation:</b>
+  <%= @attendee.invitation_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_attendee_path(@attendee) %> |
+<%= link_to 'Back', attendees_path %>
